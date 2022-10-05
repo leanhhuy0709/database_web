@@ -1,0 +1,90 @@
+<!--
+    LOGIN
+-->
+
+<!DOCTYPE html>
+<html>
+<title>F.D.S - Food Delivery System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="main.css">
+<body>
+  <div class="w3-container w3-aqua">
+    <h1>F.D.S</h1>
+    <p>Food Delivery System<p>
+  </div>
+  <div class="w3-bar w3-green">
+    <a class="w3-bar-item w3-btn w3-hover-red" href = "https://mybk.hcmut.edu.vn/my/index.action">HCMUT</a>
+    <a class="w3-bar-item w3-btn w3-hover-red" href = "home.html">F.D.S.S</a>
+    <input class="w3-bar-item center-block w3-light-grey" style = "width:500px;" type="text">
+    <a href = "#" class="w3-bar-item w3-btn w3-hover-red">Search</a>
+    <a class="w3-bar-item w3-right w3-btn w3-hover-red" href = "#">About Us</a>
+    <a class="w3-bar-item w3-right w3-btn w3-hover-red" href = "login.html">Login</a>
+
+  </div>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="./images/pho.jpg" style="width:100%">
+  <img class="mySlides" src="./images/tra_sua.jpg" style="width:100%">
+  <img class="mySlides" src="./images/com_suon.jpg" style="width:100%">
+  <img class="mySlides" src="./images/bun_cha.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<h2 class = "w3-center"> <b>TRENDING</b></h2>
+
+<div class="w3-card-4 my-box w3-border w3-border-black w3-margin w3-padding w3-round-xlarge">
+  <img src="./images/tra_sua.jpg" style = "width:100%; height:80%">
+  <a class = "w3-button w3-indigo" href = "#" style = "width:100%; height:20%">
+    Đặt hàng
+  </a>
+</div>
+<div class="w3-card-4 my-box w3-border w3-border-black w3-margin w3-padding w3-round-xlarge">
+  <img src="./images/com_suon.jpg" style = "width:100%; height:80%">
+  <a class = "w3-button w3-indigo" href = "#" style = "width:100%; height:20%">
+    Đặt hàng
+  </a>
+</div>
+<div class="w3-card-4 my-box w3-border w3-border-black w3-margin w3-padding w3-round-xlarge">
+  <img src="./images/pho.jpg" style = "width:100%; height:80%">
+  <a class = "w3-button w3-indigo" href = "#" style = "width:100%; height:20%">
+    Đặt hàng
+  </a>
+</div>
+<div class="w3-card-4 my-box w3-border w3-border-black w3-margin w3-padding w3-round-xlarge">
+  <img src="./images/bun_cha.jpg" style = "width:100%; height:80%">
+  <a class = "w3-button w3-indigo" href = "#" style = "width:100%; height:20%">
+    Đặt hàng
+  </a>
+</div>
+<div class="w3-card-4 my-box w3-border w3-border-black w3-margin w3-padding w3-round-xlarge">
+  <img src="./images/tra_sua.jpg" style = "width:100%; height:80%">
+  <a class = "w3-button w3-indigo" href = "#" style = "width:100%; height:20%">
+    Đặt hàng
+  </a>
+</div>
+
+</body>
+</html>

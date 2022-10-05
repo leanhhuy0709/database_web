@@ -1,0 +1,9 @@
+.my-box {
+    width:270px;
+    float:left;
+    height:220px;
+}
+.center-block {
+    margin: auto;
+    display: block;
+  }
